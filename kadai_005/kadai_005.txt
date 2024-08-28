@@ -1,0 +1,52 @@
+Wayajakeeee@DESKTOP-C0DVS3A MINGW64 ~/OneDrive/ドキュメント/SAMURAI_ENJINIA/GitHub/git_tutorial (main)
+$ cd "C:\Users\Wayajakeeee\OneDrive\ドキュメント\SAMURAI_ENJINIA\GitHub"
+
+Wayajakeeee@DESKTOP-C0DVS3A MINGW64 ~/OneDrive/ドキュメント/SAMURAI_ENJINIA/GitHub
+$ mkdir git_challenge
+
+Wayajakeeee@DESKTOP-C0DVS3A MINGW64 ~/OneDrive/ドキュメント/SAMURAI_ENJINIA/GitHub/git_challenge (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/Wayajakeeee/OneDrive/ドキュメント/SAMURAI_ENJINIA/GitHub/git_challenge/.git/
+
+Wayajakeeee@DESKTOP-C0DVS3A MINGW64 ~/OneDrive/ドキュメント/SAMURAI_ENJINIA/GitHub/git_challenge (main)
+$ vim hello_world.txt
+
+Wayajakeeee@DESKTOP-C0DVS3A MINGW64 ~/OneDrive/ドキュメント/SAMURAI_ENJINIA/GitHub/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+Wayajakeeee@DESKTOP-C0DVS3A MINGW64 ~/OneDrive/ドキュメント/SAMURAI_ENJINIA/GitHub/git_challenge (main)
+$ git commit -m "hello_world.txtを追加"
+[main e635f53] hello_world.txtを追加
+ 1 file changed, 2 deletions(-)
+
+Wayajakeeee@DESKTOP-C0DVS3A MINGW64 ~/OneDrive/ドキュメント/SAMURAI_ENJINIA/GitHub/git_challenge (main)
+$ vim hello_world.txt
+
+Wayajakeeee@DESKTOP-C0DVS3A MINGW64 ~/OneDrive/ドキュメント/SAMURAI_ENJINIA/GitHub/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+Wayajakeeee@DESKTOP-C0DVS3A MINGW64 ~/OneDrive/ドキュメント/SAMURAI_ENJINIA/GitHub/git_challenge (main)
+$ git commit -m "日本語訳を追加"
+[main ff4a5fc] 日本語訳を追加
+ 1 file changed, 1 insertion(+)
+
+Wayajakeeee@DESKTOP-C0DVS3A MINGW64 ~/OneDrive/ドキュメント/SAMURAI_ENJINIA/GitHub/git_challenge (main)
+$ git log
+commit ff4a5fc4e4c9267f7f78741fbeb4c7aceaf7d8d8 (HEAD -> main)
+Author: araisakie <saaaaakikyon@gmail.com>
+Date:   Tue Aug 27 00:06:11 2024 +0900
+
+    日本語訳を追加
+
+commit e635f535302a428b340943e9bed5d08c8e69e5d3
+Author: araisakie <saaaaakikyon@gmail.com>
+Date:   Tue Aug 27 00:04:05 2024 +0900
+
+    hello_world.txtを追加
+
+Wayajakeeee@DESKTOP-C0DVS3A MINGW64 ~/OneDrive/ドキュメント/SAMURAI_ENJINIA/GitHub/git_challenge (main)
+$ git log --oneline
+6a83b94 (HEAD -> main) 日本語訳を追加
+18034d1 hello_world.txtを追加   
